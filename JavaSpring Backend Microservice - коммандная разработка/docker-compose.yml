@@ -1,0 +1,8 @@
+services: 
+  backend:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - /srv/uploads/uploads:/home/gradle/src/uploads
+    ports:
+      - 5680:8080
